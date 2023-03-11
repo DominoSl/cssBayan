@@ -152,6 +152,12 @@
   }
 }
 
+@media (hover: none) {
+  .icon {
+    opacity: 1;
+  }
+}
+
 @media (hover:hover) {
   .bayan__memes:hover .bayan__meme {
     color: black;
