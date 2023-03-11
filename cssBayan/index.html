@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="page">
   <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,31 +10,131 @@
     <link rel="stylesheet" href="./style.css">
     <title>Bayan for memes</title>
   </head>
-  <body>
+  <body class="page__body">
     <div class="wrapper">
       <div class="bayan">
-        <h1 class="bayan__title">
+        <h1 class="bayan__title border-botton">
           CSS Bayan
         </h1>
 
-        <div class="bayan__meme">
-          <label class="bayan__label" for="meme-codewars">
-            <input
-              class="bayan__input"
-              type="radio" name="meme"
-              id="meme-codewars"
-              checked
-            >
-              Lets do the codewars!`
-              <div class="icon"></div>
-              <img
-                class="bayan__image"
-                src="./images/codewars.svg"
-                alt="Samurai sloth"
+        <div class="bayan__memes">
+          <div class="bayan__meme border-botton">
+            <label class="bayan__label" for="meme-codewars">
+              <input
+                class="bayan__input"
+                type="radio" name="meme"
+                id="meme-codewars"
+                checked
               >
-            </label>
+                <span class="bayan__text">
+                  Lets do the codewars!
+                </span>
+                <div class="icon"></div>
+              </span>
+              <img
+                  class="bayan__image"
+                  src="./images/codewars.svg"
+                  alt="Samurai sloth"
+                >
+              </label>
+          </div>
+          <div class="bayan__meme border-botton">
+            <label class="bayan__label" for="meme-expert">
+              <input
+                class="bayan__input"
+                type="radio" name="meme"
+                id="meme-expert"
+                checked
+              >
+              <span class="bayan__text">
+                You are talking to me!?
+              </span>
+              <div class="icon"></div>
+                <img
+                  class="bayan__image"
+                  src="./images/expert.svg"
+                  alt="Expert sloth"
+                >
+              </label>
+          </div>
+          <div class="bayan__meme border-botton">
+            <label class="bayan__label" for="meme-feature">
+              <input
+                class="bayan__input"
+                type="radio" name="meme"
+                id="meme-feature"
+                checked
+              >
+              <span class="bayan__text">
+                Thats not a bug I tell you!
+              </span>
+              <div class="icon"></div>
+                <img
+                  class="bayan__image"
+                  src="./images/feature-in-disguise.svg"
+                  alt="Disquised sloth"
+                >
+              </label>
+          </div>
+          <div class="bayan__meme border-botton">
+            <label class="bayan__label" for="meme-finished">
+              <input
+                class="bayan__input"
+                type="radio" name="meme"
+                id="meme-finished"
+                checked
+              >
+              <span class="bayan__text">
+                What's done is done!
+              </span>
+              <div class="icon"></div>
+                <img
+                  class="bayan__image"
+                  src="./images/finished-work.svg"
+                  alt="Sloth's done its work"
+                >
+              </label>
+          </div>
+          <div class="bayan__meme border-botton">
+            <label class="bayan__label" for="meme-interview">
+              <input
+                class="bayan__input"
+                type="radio" name="meme"
+                id="meme-interview"
+                checked
+              >
+              <span class="bayan__text">
+                Prepare yourself!
+              </span>
+              <div class="icon"></div>
+                <img
+                  class="bayan__image"
+                  src="./images/interview-with-mentor.svg"
+                  alt="Dialog sloths"
+                >
+              </label>
+          </div>
+          <div class="bayan__meme border-botton">
+            <label class="bayan__label" for="meme-deadline">
+              <input
+                class="bayan__input"
+                type="radio" name="meme"
+                id="meme-deadline"
+                checked
+              >
+              <span class="bayan__text">
+                Everything is gonna be fine!
+              </span>
+                <div class="icon"></div>
+                <img
+                  class="bayan__image"
+                  src="./images/one-hour-before-deadline.svg"
+                  alt="Stressed sloth"
+                >
+              </label>
+          </div>
         </div>
-          <input type="radio" name="meme" id="">
+
       </div>
     </div>
   </body>
