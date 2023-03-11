@@ -150,7 +150,9 @@
     transition: transform 300ms ease-out, opacity 300ms;
     opacity: 0;
   }
+}
 
+@media (hover:hover) {
   .bayan__memes:hover .bayan__meme {
     color: black;
   }
@@ -171,6 +173,7 @@
   .bayan__memes:hover .icon {
     visibility: visible;
   }
+
 
   .bayan__meme:hover .bayan__image {
     transform: scale(1);
