@@ -8,6 +8,7 @@
 .wrapper {
   width: 80vw;
   margin: 0 auto;
+  min-width: 300px;
 }
 
 .bayan {
@@ -65,7 +66,6 @@
 }
 
 .icon {
-  visibility: hidden;
   width: 1rem;
   height: 1rem;
   background-image: url(./images/plus.png);
@@ -73,13 +73,21 @@
   transition: transform 300ms ease-out;
 }
 
+.bayan__text {
+  display: block; 
+  width: 80%;
+}
+
 .bayan__image {
   display: block;
   width: 100%;
+  margin: 0 auto;
+  flex-basis: auto;
+  flex-grow: 2;
   transform: scale(0.5);
   max-height: 0;
   opacity: 0;
-  max-width: 35rem;
+  max-width: 20rem;
   transition:
     transform 600ms,
     max-height 600ms,
@@ -96,20 +104,6 @@
     width: 60vw;
   }
 
-  .bayan__memes:hover .bayan__meme {
-    color: black;
-  }
-  
-  .bayan__memes:hover .icon {
-    visibility: visible;
-  }
-
-  .bayan__meme:hover .bayan__image {
-    transform: scale(1);
-    max-height: 200rem;
-    opacity: 1;
-  }
-
   .bayan__title {
     font-size: 2.5rem;
   }
@@ -120,6 +114,68 @@
 
   .bayan__image {
     width: 80%;
+    max-width: 30rem;
     margin: 0 auto;
+  }
+}
+
+@media (min-width: 1024px) {
+  .wrapper {
+    width: 60vw;
+  }
+
+
+  .bayan__title {
+    font-size: 3.5rem;
+  }
+
+  .bayan__text {
+    font-size: 2rem;
+  }
+
+  .bayan__image {
+    width: 80%;
+    max-width: 40rem;
+  }
+
+  .icon {
+    visibility: hidden;
+    width: 3rem;
+    height: 3rem;
+    background-image: url(./images/plus.png);
+    background-size: cover;
+    transition: transform 300ms ease-out;
+  }
+
+  .bayan__memes:hover .bayan__meme {
+    color: black;
+  }
+
+  .icon {
+    visibility: hidden;
+  }
+
+  .bayan__memes:hover .icon {
+    visibility: visible;
+  }
+
+  .bayan__meme:hover .bayan__image {
+    transform: scale(1);
+    max-height: 200rem;
+    opacity: 1;
+  }
+
+  .bayan__memes:hover .bayan__meme {
+    color: black;
+  }
+
+  .bayan__memes:hover .icon {
+    visibility: visible;
+  }
+
+  .bayan__meme:hover .bayan__image {
+    transform: scale(1);
+    max-height: 200rem;
+    opacity: 1;
   }
 }
