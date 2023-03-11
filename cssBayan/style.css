@@ -62,7 +62,7 @@
 }
 
 .bayan__label:active .bayan__image {
-  filter: brightness(110%) saturate(110%);
+  filter: brightness(130%) saturate(110%);
 }
 
 .bayan__input:checked + span {
@@ -85,7 +85,8 @@
 
 .bayan__image {
   display: block;
-  width: 100%;
+  width: 80%;
+  margin: 0 auto;
   transform: scale(0.5);
   max-height: 0;
   opacity: 0;
@@ -122,34 +123,31 @@
   }
 
   .bayan__image {
-    width: 80%;
-    max-width: 30rem;
-    margin: 0 auto;
+    width: 60%;
   }
 }
 
 @media (min-width: 1024px) {
   .wrapper {
-    width: 60vw;
+    width: 50vw;
   }
 
   .bayan__title {
-    font-size: 3.5rem;
+    font-size: 3rem;
   }
 
   .bayan__text {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 
   .bayan__image {
-    width: 80%;
-    max-width: 40rem;
+    width: 40%;
   }
 
   .icon {
     visibility: hidden;
-    width: 3rem;
-    height: 3rem;
+    width: 2rem;
+    height: 2rem;
     background-image: url(./images/plus.png);
     background-size: cover;
     transition: transform 300ms ease-out;
@@ -159,17 +157,12 @@
     color: black;
   }
 
-  .icon {
-    visibility: hidden;
-  }
-
   .bayan__memes:hover .icon {
     visibility: visible;
   }
 
   .bayan__meme:hover .bayan__image {
     transform: scale(1);
-    max-height: 200rem;
     opacity: 1;
   }
 
@@ -181,11 +174,6 @@
     visibility: visible;
   }
 
-  .bayan__meme:hover .bayan__image {
-    transform: scale(1);
-    max-height: 200rem;
-    opacity: 1;
-  }
   .bayan__meme:hover .bayan__image {
     transform: scale(1);
     max-height: 200rem;
