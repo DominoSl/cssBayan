@@ -1,3 +1,9 @@
+.page {
+  width: 100vw;
+  overflow-x: hidden;
+  /* overflow-y: scroll; */
+}
+
 .page__body {
   box-sizing: border-box;
   margin: 0;
