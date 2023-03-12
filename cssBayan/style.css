@@ -135,10 +135,6 @@
   .bayan__title {
     font-size: 3rem;
   }
-  
-  .bayan__label {
-    cursor: pointer;
-  }
 
   .bayan__text {
     font-size: 1.5rem;
@@ -191,5 +187,9 @@
     transform: scale(1);
     max-height: 200rem;
     opacity: 1;
+  }
+
+  .bayan__label {
+    cursor: pointer;
   }
 }
